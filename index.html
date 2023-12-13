@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BARBER SHOP</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+
+
+<div class="scrollTop" onclick="scrollToTop();"></div>
+
+<header>
+  <section class="my-header d-none d-lg-block">
+  <nav class="navbar navbar-expand-lg ">
+  <div class="container">
+    <div class="my-logo">
+           <a class="navbar-brand" href="#">
+            <img src="images/logo.png">
+          </a>
+    </div>
+    <div class="col-md-6">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#shop">SHOP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">OUR TEAM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">REVIEWS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+</section>
+</header>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if($(document).scrollTop() > 50){
+        $(".my-header").addClass("newClass");
+      }
+      else{
+         $(".my-header").removeClass("newClass");
+      }
+    })
+  })
+</script>
+
+
+
+
+
+
+
+
+
+<div class="mobile-header d-md-none d-lg-none">
+    <div class="container">
+    <div class="row ">
+      <div class="col-6">
+            <a href="navbar-brand" href="#">
+              <img src="images/logo.png" alt="Bootstrap" width="200" height="50px">
+           </a>
+      </div>
+      <div class="col-6 mobile-col">
+       <button class="navbar-toggler mobile-tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+      <div class="line-1">
+      </div>
+      <div class="line-2">
+      </div>
+      <div class="line-3">
+      </div>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#shop">SHOP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">OUR TEAM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">REVIEWS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    <div class="socialicon">
+      <ul>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+      <p>© 2023 MegaOne. Made With Love by BARBAR SHOP</p>
+    </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<section class="slider">
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" id="Home">
+    <div class="carousel-item active my-img-1">
+      <div class="page-1">
+        <h5>Welcome To The Barber Shop </h5>
+        <h1>Best Barber & Hair Shop</h1>
+        <h4>Achieve A Style Of Your Dreams</h4>
+        <button class="btn">
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+
+    <div class="carousel-item my-img-2">
+      <div class="page-2">
+        <h5>The Most latest </h5>
+        <h1>QUALITY & SERVICES</h1>
+        <h4>The Best Place For Your Hair Style</h4>
+        <button class="btn2">
+          READ MORE
+        </button>
+        <button class="btn">
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+
+    <div class="carousel-item my-img-3">
+       <div class="page-3">
+        <h5>The Most latest </h5>
+        <h1>Hair Specialist</h1>
+        <h4>The Best Place For Your Hair Style</h4>
+        <button class="btn2">
+          READ MORE
+        </button>
+        <button class="btn">
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+
+
+
+
+<section class="About" id="About">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="my-image">
+          <img src="images/about-img.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="about-text">
+          <h5>Why Love Us</h5>
+          <h2>ABOUT US STORY</h2>
+          <p>There are many variations of passages of Lorem Ipsum available be the majority have suffered alteration in some form, by injected humour or randomised words.
+          </p>
+          <ul>
+            <li><i class="fa-regular fa-circle-check"></i>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+             <li><i class="fa-regular fa-circle-check"></i>
+                Morbi ornare nibh id cursus vestibulum.
+             </li>
+             <li><i class="fa-regular fa-circle-check"></i>
+               Duis vitae lectus facilisis, tristique lorem sit amet males.
+             </li>
+             <li><i class="fa-regular fa-circle-check"></i>
+                It is a long established fact that a distracted
+             </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="about-shop" >
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="client">
+          <i class="fa-regular fa-face-smile"></i>
+          <h2 id="num1">1300</h2>
+          <h5>Happy Client</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="branch">
+          <i class="fa-solid fa-house"></i>
+          <h2 id="num2">115</h2>
+          <h5>Total Branches</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="treat">
+          <i class="fa-solid fa-globe"></i>
+          <h2 id="num3">250</h2>
+          <h5>Treatments</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="award">
+          <i class="fa-solid fa-award"></i>
+          <h2 id="num4">102</h2>
+          <h5>Award Winners</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="/Users/Piyush/Downloads/barbar/barbar/js/countMe.min.js"></script>
+    <script>
+    window.onload = ()=>{
+        // $(selector).countMe(delay,speed)
+        $("#num1").countMe(40, 50);
+        $("#num2").countMe(40, 50);
+        $("#num3").countMe(40, 50);
+        $("#num4").countMe(40, 50);
+     }
+    </script>
+
+
+
+
+<section class="shop" id="shop">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading">
+          <h5>Check Our Plans & Pricing </h5>
+          <h2>OUR PRICES</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="our-shop">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="price-list">
+          <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">MEN’S HAIRCUT</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$85</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="price-list">
+          <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">CLEAN SHAVE</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="price-list">
+          <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">BEARD LINEUP</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$35</p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="price-list">
+          <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">MEN’S FACIAL</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$60</p>
+            </div>
+          </div>
+        </div>
+         </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-list">
+             <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">TAPER HAIRCUT</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$80</p>
+            </div>
+          </div>
+          </div>
+           </div>
+
+           <div class="col-md-6">
+            <div class="price-list">
+          <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">HAIR CURLING</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$25</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-list">
+             <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">CUSTOM HAIRCUT</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$70</p>
+            </div>
+          </div>
+          </div>
+           </div>
+
+          <div class="col-md-6">
+            <div class="price-list">
+             <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">HIGHLIGHT COLOR</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$70</p>
+            </div>
+          </div>
+          </div>
+        </div>
+         </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-list">
+             <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">HEAD LINEUP</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$120</p>
+            </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="price-list">
+              
+            
+             <div class="rates">
+            <div class="info">
+              <h6 class="main-heading">MEN’S BLEACH</h6>
+              <h6 class="sub-heading">Lorem ipsum dolor sit amet, consectetur elit.</h6>
+              <p class="rate">$50</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+<section class="gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading-1">
+          <h5>See Our Amazing Work</h5>
+          <h2>OUR GALLERY</h2>
+          <p>There are many variations of passages of Lorem Ipsum available be the majority have suffered alteration in some form.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section>
+  <div class="our-gallery" id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-1.jpg">
+                  <img src="images/work-1.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Styling Beard</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-2.jpg">
+                  <img src="images/work-2.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Face Mask</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+             <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-5.jpg">
+                  <img src="images/work-5.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Taper Haircut</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-md-3">
+              <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-8.jpg">
+                  <img src="images/work-8.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Latest Work</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-3.jpg">
+                  <img src="images/work-3.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Styling Hair Cut</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-3">
+                 <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-4.jpg">
+                  <img src="images/work-4.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Hair Style</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-6.jpg">
+                  <img src="images/work-6.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Stylish Hair</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-10.jpg">
+                  <img src="images/work-10.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Hair Curling</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-11.jpg">
+                  <img src="images/work-11.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Hair Spray</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="t-1">
+              <div class="item-1">
+                <a href="images/work-12.jpg">
+                  <img src="images/work-12.jpg" class="w-100">
+                  <div class="overlayfade">
+                    <div class="plus">
+                    </div>
+                    <h5>Hair Spray</h5>
+                    <p>See Our Amazing Work</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="team" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="heading-2">
+          <h5>Let's Meet To Our Awesome Team</h5>
+          <h2>WE HAVE CREATIVE & EXPERT TEAM</h2>
+          <p>There are many variations of passages of Lorem Ipsum available be the majority have suffered alteration in some form.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+         <ul class="services-skill">
+          <li class="progress-item">
+            <h6>HAIR STYLING</h6>
+            <span>
+              <b class="count">
+                100
+              </b>
+              %
+            </span>
+            <div class="progress">
+              <span class="progress-bar">
+              </span>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <h6>BEARD STYLING</h6>
+            <span>
+              <b class="count">
+                95
+              </b>
+              %
+            </span>
+            <div class="progress">
+              <span class="progress-bar1">
+              </span>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <h6>FACE MASK</h6>
+            <span>
+              <b class="count">
+                90
+              </b>
+              %
+            </span>
+            <div class="progress">
+              <span class="progress-bar2">
+              </span>
+            </div>
+          </li>
+
+          <li class="progress-item">
+            <h6>LICENSED BARBERS</h6>
+            <span>
+              <b class="count">
+                100
+              </b>
+              %
+            </span>
+            <div class="progress">
+              <span class="progress-bar">
+              </span>
+            </div>
+          </li>
+         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="our-team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="person">
+          <img src="images/team-img-1.jpg" class="w-100">
+        </div>
+        <div class="person-details">
+          <h5>David Manager</h5>
+          <p>Expert Barber</p>
+          <ul class="social-icon">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="person">
+          <img src="images/team-img-2.jpg" class="w-100">
+        </div>
+         <div class="person-details">
+          <h5>Mike Kongal</h5>
+          <p>Founder & Boss Barber</p>
+          <ul class="social-icon">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="person">
+          <img src="images/team-img-3.jpg" class="w-100">
+        </div>
+         <div class="person-details">
+          <h5>Alex Dian</h5>
+          <p>Expert Barber</p>
+          <ul class="social-icon">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="slider-2" id="reviews">
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active my-text">
+      <div class="r-1">
+        <p> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+        <div class="testimonial-post">
+          <a href="">
+            <img src="images/c-1.jpg">
+          </a>
+           <h3>Glen Jarret</h3>
+           <h4>Customer </h4>
+        </div>
+        
+        <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="carousel-item my-text">
+      <div class="r-1">
+        <p> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+        <div class="testimonial-post">
+          <a href="">
+            <img src="images/c-2.jpg">
+          </a>
+          <h3>Janey Williams</h3>
+        </div>
+        <h4>Customer </h4>
+        <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="carousel-item my-text">
+      <div class="r-1">
+        <p> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+        <div class="testimonial-post">
+          <a href="">
+            <img src="images/c-3.jpg">
+          </a>
+          <h3>Kate Lawrence</h3>
+        </div>
+        <h4>Customer </h4>
+        <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+
+
+
+
+
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading-3">
+          <h5>For Support Contact Us</h5>
+          <h2>LET'S GET IN TOUCH</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="contact-form-data">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form">
+          <input type="text"  class="data" name="First Name" placeholder="First Name:" required>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form">
+          <input type="text"  class="data" name="Last Name" placeholder="Last Name :" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form">
+          <input type="email"  class="data" name="Email" placeholder="Email:" required>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form">
+         <input type="phone" class="data" name=" Phone" placeholder="Phone:" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form">
+         <input type="Message" class="data" name="Message" placeholder="Message">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <button class="btn3">
+           Contact Now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="my-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="footer-icon">
+          <ul>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-google-plus-g"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-pinterest-p"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="copyright">
+          © 2023 MegaOne. Made With Love By 
+          <a href="">BARBAR</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<script>
+  
+  window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.scrollTop');
+    scroll.classList.toggle("active", window.scrollY > 500)
+  })
+  function scrollToTop(){
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    })
+  }
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
